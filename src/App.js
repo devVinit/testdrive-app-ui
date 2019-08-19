@@ -95,6 +95,7 @@ function App() {
         <Modal open={slot} onClose={() => setSlot(null)} closeOnDocumentClick>
           <Modal.Header>Select a Photo</Modal.Header>
           <Modal.Content>
+            <h4>{slot}</h4>
             <Input size='large' placeholder='Booked By' onChange={event => setPersonName(event.target.value)} value={personName} />
             <Button onClick={() => createBooking()}>
               Create
